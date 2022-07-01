@@ -1,0 +1,5 @@
+passwordVerifier/bin
+passwordVerifier/obj
+passwordVerifier/Properties
+PasswordTesting/bin
+PasswordTesting/obj
