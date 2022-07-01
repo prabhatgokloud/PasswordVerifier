@@ -22,14 +22,14 @@ namespace passwordVerifer
                     isValid = false;
                     exceptions.Add(new Exception("\npassword cannot be empty"));
                 }
-                if (password.Length < MinPassLength)
+                if (password.Length <= MinPassLength)
                 {
                     isValid = false;
                     exceptions.Add(new Exception("\nPassword should be greater than " + MinPassLength + " letters\n"));
                 }
                 if (!password.Any(char.IsLower))
                 {
-                    isValid = !false;
+                    isValid = false;
                     exceptions.Add(new Exception("\nPassword should have atleast one lowerCase letter"));
                 }
                 if (!password.Any(char.IsUpper))
